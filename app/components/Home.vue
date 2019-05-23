@@ -16,6 +16,13 @@ export default {
     return {
       message: "INTRO + RÈGLES DU JEU"
     };
+  },
+  methods: {
+    onOpen() {
+	    setInterval(function(){
+        alert("Hello world"); 
+      }, 3000);
+    }
   }
 };
 </script>

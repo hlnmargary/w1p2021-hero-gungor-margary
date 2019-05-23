@@ -11,11 +11,14 @@
 }
 
 .homeContent {
-  opacity: 0;
+  opacity: 1;
   animation: appear 1s 5s forwards; 
 }
 
 .main {
   width: 100vw; 
   height: 100vh;
+  background: url('/assets/img/bg.svg');
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
