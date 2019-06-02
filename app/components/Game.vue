@@ -1,9 +1,9 @@
 <template>
   <div class="gameMain main">
     <div class="soundContainer">
-      <audio rel="preload" autoplay controls loop >
+      <!-- <audio rel="preload" autoplay controls loop >
         <source src="../assets/audio/audiogame.mp3">
-      </audio>
+      </audio> -->
     </div>
     <div class="titleContainer">
       <h1>{{ step.content }}</h1>  
@@ -11,7 +11,6 @@
     <div class="svgContainer">    
       <svg class="character" aria-hidden="true"><use v-bind:href="`${character}`"></use></svg>
     </div>
-
     <ul class="choicesList">
       <li
         class="choiceItem"
@@ -27,6 +26,9 @@
         </div>
       </li>
     </ul>
+    <div class="bladderContainer">
+      <svg class="bladder" aria-hidden="true"><use xlink:href="#bladder"></use></svg>
+    </div>
 
   </div>
 </template>
