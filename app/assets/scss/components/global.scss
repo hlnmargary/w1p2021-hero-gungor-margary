@@ -1,3 +1,5 @@
+// ROUTER ANIMATIONS 
+
 .page-enter-active, .page-leave-active {
   transition: opacity 0.5s, 
 }
@@ -5,7 +7,30 @@
   opacity: 0;
 }
 
+// GLOBAL STYLE
+
 html {
   background: linear-gradient(#2E0244, #E56C63);
 }
 
+body {
+  font-family: 'Rajdhani', sans-serif;
+  overflow: hidden;
+  font-weight: normal; 
+  font-size: 1.5rem; 
+  color: white; 
+}
+
+.main {
+  width: 100vw; 
+  height: 100vh;
+  position: relative;
+}
+
+h1 {
+  font-weight: bold; 
+}
+
+li {
+  cursor: pointer;
+}

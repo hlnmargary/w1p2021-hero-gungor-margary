@@ -1,5 +1,5 @@
 <template>
-  <div class="enigmaMain">
+  <div class="enigmaMain main">
     <h1 class="enigmaTitle">Enigme</h1>
     <ul class="enigmaList">
       <li class="enigmaItem">Mon premier est le nombre de saison de Game of Thrones</li>

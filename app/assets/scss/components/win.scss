@@ -11,8 +11,8 @@
 }
 
 .toiletsContainer {
-  width: 100vw;
-  height: 35vh; 
+  width: 100%;
+  height: 35%; 
   transform: translateY(35%);
   margin: 0 auto;  
   fill: white;
@@ -29,35 +29,26 @@
   transform: translateY(100%);
 }
 
-.winMain {
-  background: linear-gradient(#2E0244, #E56C63);
-  background-size: cover; 
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh; 
-  position: relative;
-  justify-content: center;
-}
-
-.winContent{
-  width: 60vw;
-  height: 100vh; 
+.winContent {
+  width: 60%;
+  height: 100%; 
   margin: 0 auto; 
+
   display: flex; 
   flex-direction: column; 
   justify-content: space-around; 
 }
 
-.winTitle{
+.winTitle {
   font-size: 6.5rem;
   transform: translateY(90px);
   margin: 0 auto; 
 }
 
 .winMessage {
-  color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
+  font-weight: bold; 
 }
 
 .btnRestartContainer {

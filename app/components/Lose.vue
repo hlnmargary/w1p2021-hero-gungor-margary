@@ -1,5 +1,5 @@
 <template>
-  <div class="loseMain">
+  <div class="loseMain main">
     <div class="loseContent">
       <h1 class="loseTitle">{{message}}</h1>
       <h2 class="loseMessage">{{endMessage}}</h2>

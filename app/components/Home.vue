@@ -1,5 +1,5 @@
 <template>
-  <div class="homeMain">
+  <div class="homeMain main">
     <div class="loaderContainer">    
       <svg class="loader" aria-hidden="true"><use xlink:href="#loader"></use></svg>
     </div>

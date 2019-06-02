@@ -1,8 +1,5 @@
 <template>
   <div class="gameMain main">
-    <div class="urinupContainer">    
-      <svg class="urinupLogo" aria-hidden="true"><use v-bind:href="`${step.logoSite}`"></use></svg>
-    </div>
     <div class="soundContainer">
       <audio rel="preload" autoplay controls loop >
         <source src="../assets/audio/audiogame.mp3">
@@ -23,13 +20,14 @@
         :key="action.path">
 
         <div class="iconAction">
-          <div class="labelAction" >{{action.label}}</div>
           <div class="logoContainer">
             <svg class="logo" aria-hidden="true"><use v-bind:href="`${action.logo}`"></use></svg>
           </div>
+          <div class="labelAction" >{{action.label}}</div>
         </div>
       </li>
     </ul>
+
   </div>
 </template>
 

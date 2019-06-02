@@ -1,36 +1,31 @@
-.charactersMain{
-  background: linear-gradient(#2E0244, #E56C63);
-  background-size: cover; 
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh; 
-  position: relative;
-  
-}
-
 .charactersContent{
-  padding-top: 40px;
-  font-size: 4rem;
+  width: 70%; 
+  margin: 0 auto; 
+  padding: 40px;
+  font-size: 3.5rem; 
+  text-align: center; 
+  text-transform: uppercase; 
 }
 
 .charactersList {
+  position: relative;
+
   display: flex;
   justify-content: space-around;
-  position: relative;
+
   width: 60%;
   height: 70%; 
-  transform: translateY(10%);
   margin: 0 auto;
-  padding: 0;
+  padding-top: 40px; 
 }
 
 .characterItem {
-  color: white;
-  border-radius: 80px; 
-  border: solid; 
   display: flex; 
   flex-direction: column; 
   justify-content: space-around;
+
+  border-radius: 80px; 
+  border: solid; 
 
   &:hover {
     background-color: rgb(30, 8, 95, 0.66);
@@ -53,281 +48,3 @@
 }
 
 
-// Game Character
-.svgContainer {
-  position: absolute;
-  bottom: 0;
-  width: 100vw; 
-  height: 600px; 
-}
-
-.character { 
-  height: 100%;
-  width: 100%; 
-}
-
-.group {
-  transform: translateX(125px);
-}
-
-// Not running
-.runningItem {
-  display: none;
-}
-
-// Not skating
-.scooterItem {
-  display: none;
-}
-
-// Not dabbing
-.dabArms {
-  display: none;
-}
-
-// Not skating 
-.skate {
-  display: none;
-}
-
-// Not crying
-.cryingFace {
-  display: none;
-}
-
-// Not winning
-.winningFace {
-  display: none;
-}
-
-// Not scaring
-.scaringFace {
-  display: none;
-}
-
-// Not losing
-.losingFace {
-  display: none; 
-}
-
-// Moving States
-@keyframes walk {
-  from {
-    transform: translateY(-50px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes walkArm {
-  from {
-    transform: scale(0.99);
-  }
-  to {
-    transform: translateZ(0);
-  }
-}
-
-// Walking State
-
-.is-walking {
-  .leftLeg {
-    animation: walk 0.4s linear alternate infinite; 
-  }
-  
-  .rightLeg {
-    animation: walk 0.4s 0.4s linear alternate infinite; 
-  }
-  
-  .leftArmWalk {
-    animation: walkArm 0.4s 0.4s linear alternate infinite;
-    fill: white; 
-    stroke: black; 
-  }
-  
-  .rightArmWalk {
-    animation: walkArm 0.4s linear alternate infinite;
-    fill: white; 
-    stroke: black; 
-  }
-  
-  .bag {
-    animation: walkArm 0.4s linear alternate infinite;
-  }
-}
-
-// Running State 
-
-.is-running {
-  .leftArmWalk, .rightArmWalk {
-    display: none;
-  }
-
-  .runningItem {
-    display: block;
-  }
-
-  .leftLeg {
-    animation: walk 0.1s linear alternate infinite; 
-  }
-
-  .rightLeg  {
-    animation: walk 0.1s 0.1s linear alternate infinite; 
-  }
-
-  .leftArmRun {
-    animation: walkArm 0.1s 0.1s linear alternate infinite;
-  }
-
-  .rightArmRun {
-    animation: walkArm 0.1s linear alternate infinite;
-  }
-
-  .bag {
-    animation: walkArm 0.1s linear alternate infinite;
-  }
-}
-
-// Driving States
-@keyframes turningWheel {
-  from {
-    stroke-dasharray: 20;
-    stroke-dashoffset: 200;
-  }
-  to {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 20;
-  }
-}
-
-@keyframes driving {
-  from {
-    transform: translateX(85px);
-  }  
-  to {
-    transform: translateX(165px);
-  }
-}
-
-// Scooting State
-
-.is-scooting {
-  .leftArmWalk, .rightArmWalk {
-    display: none;
-  }
-
-  .scooterItem {
-    display: block;
-  }
-
-  .group {
-    animation: driving 0.8s linear alternate infinite; 
-  }
-
-  .scooterLine {
-    animation: turningWheel 1s linear infinite 
-  }
-}
-
-// Skating State
-
-.is-skating {
-  .group {
-    animation: driving 1s linear alternate infinite; 
-  }
-
-  .skate {
-    display: block; 
-  }
-
-  .skateLine {
-    animation: turningWheel 1s linear infinite;
-  }
-}
-
-// Dabbing State 
-
-.is-dabbing {
-  .leftArmWalk, .rightArmWalk {
-    display: none;
-  }
-
-  .dabArms {
-    display: block; 
-  }
-}
-
-// Crying State
-
-.is-crying {
-  .cryingFace {
-    display: block; 
-  }
-}
-
-// Winning State 
-.is-winning {
-  .winningFace {
-    display: block; 
-  }
-}
-
-// Scaring State 
-
-.is-scaring {
-  .scaringFace {
-    display: block; 
-  }
-}
-
-//Losing State 
-
-.is-losing {
-  .losingFace {
-    display: block; 
-  }
-}
-
-// Biking 
-
-svg {
-  width: 40%;
-}
-
-.bikeGroup {
-  animation: driving 1s linear alternate infinite; 
-}
-
-@keyframes pedaling {
-  from {
-    transform: translateY(30px);
-  }
-  to {
-    transform: translateY(-20px);
-  }
-}
-
-@keyframes bikeTurningWheel {
-  from {
-    stroke-dasharray: 50;
-    stroke-dashoffset: 200;
-  }
-  to {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 50;
-  }
-}
-
-.bikeRightLeg, .rightBikePedal {
-  animation: pedaling 0.5s linear alternate infinite; 
-}
-
-.bikeLeftLeg, .leftBikePedal {
-    animation: pedaling 0.5s 0.5s linear alternate infinite; 
-}
-
-.bikeLine {
-  stroke: white; 
-  animation: bikeTurningWheel 0.5s linear infinite 
-}

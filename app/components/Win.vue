@@ -1,5 +1,5 @@
 <template>
-  <div class="winMain">
+  <div class="winMain main">
     <div class="winContent">
     <h1 class="winTitle">{{ message }}</h1>
     <p class="winMessage">{{winMessage}}</p>
